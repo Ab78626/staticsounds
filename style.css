@@ -142,6 +142,13 @@ img {
   padding-top: 100px;
   padding-bottom: 70px; }
 
+  .book-now{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 0; 
+    text-align: center;
+  }
 /* :: 3.4.0 Section Heading */
 .section-heading {
   position: relative;
@@ -384,11 +391,11 @@ img {
           color: rgba(255, 255, 255, 0.7); }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .header-area .oneMusic-main-menu .classy-navbar .classynav ul li a {
-            background-color: #000000;
+            background-color: #B7AC87;
             border-bottom-color: rgba(255, 255, 255, 0.1); } }
         @media only screen and (max-width: 767px) {
           .header-area .oneMusic-main-menu .classy-navbar .classynav ul li a {
-            background-color: #000000;
+            background-color: #B7AC87;
             border-bottom-color: rgba(255, 255, 255, 0.1); } }
       .header-area .oneMusic-main-menu .classy-navbar .classynav ul li.megamenu-item > a::after,
       .header-area .oneMusic-main-menu .classy-navbar .classynav ul li.has-down > a::after {
@@ -468,7 +475,7 @@ img {
             width: 15px;
             height: 15px;
             border: 1px solid #fff;
-            background-color: #232323;
+            background-color: #0B0705;
             color: #fff;
             display: block;
             position: absolute;
@@ -487,7 +494,7 @@ img {
     top: 0;
     left: 0;
     z-index: 9999;
-    background-color: #000000;
+    background-color: #0B0705;
     box-shadow: 0 5px 50px 15px rgba(0, 0, 0, 0.2); }
     @media only screen and (max-width: 767px) {
       .header-area .is-sticky .oneMusic-main-menu {
@@ -1182,7 +1189,7 @@ img {
 .footer-area {
   position: relative;
   z-index: 1;
-  background-color: #000000;
+  background-color: #0B0705;
   padding: 30px 0; }
   @media only screen and (max-width: 767px) {
     .footer-area {
