@@ -72,6 +72,7 @@
             </div>
         </div>
     </header>
+    
 <!-- ##### slider  ##### -->
 
     <!-- ##### Hero Area Start ##### -->
@@ -124,7 +125,8 @@
     </section>
             <section class="book-now"> <div class="btn oneMusic-btn mt-50"> <a href="#contact"> Book Now  <i class="fa fa-angle-double-right"></a></i></div></section>
                                
-                          
+            <br>
+            <br>                 
     <!-- ##### Hero Area End ##### -->
 
    
@@ -155,7 +157,7 @@
                                 <div class="event-text">
                                     <h4>BlakeFest </h4>
                                     <div class="event-meta-data">
-                                        <a href="#" class="event-place">218 Martin St, Penticton BC V2A 5K3</a>
+                                        <a href="#" class="event-place">218 Martin St, Penticton </a>
                                         <a href="#" class="event-date">August 5, 2023</a>
                                     </div>
                                     <a href="#" class="btn see-more-btn">More Details</a>
@@ -291,7 +293,7 @@
     <!-- ##### Miscellaneous Area End ##### -->
 
     <!-- ##### Contact Area Start ##### -->
-    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" id="contact" style="background-image: url(img/bg-img/wt100.jpg);">
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" id="contact" style="background-image: url(img/bg-img/wee.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -306,7 +308,7 @@
                 <div class="col-12">
                     <!-- Contact Form Area -->
                     <div class="contact-form-area">
-                        <form action="#" method="post">
+                    
                             <div class="row">
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group wow fadeInUp" data-wow-delay="100ms">
@@ -328,16 +330,33 @@
                                         <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                                     </div>
                                 </div>
-                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="500ms">
-                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
+                                <div class="col-12 text-center">
+                                    <button class="btn oneMusic-btn mt-30" type="submit" onclick=sendMail(event)>Send <i class="fa fa-angle-double-right"></i></button>
                                 </div>
                             </div>
-                        </form>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script>
+        function sendMail(e) {
+           e.preventDefault();
+           Email.send({
+                       Host : "smtp.elasticemail.com",
+                       Username : "staticsoundsja@gmail.com",
+                       Password : "FEE7B1DD1C52C70EB2D88220CF97249C06F0",
+                       To : 'staticsoundsja@gmail.com',
+                       From : 'staticsoundsja@gmail.com',
+                       Subject : document.getElementById('subject').value,
+                       Body : document.getElementById('message').value + " contact me at  : "+ document.getElementById('email').value +"  name "+document.getElementById('name').value
+                   }).then(
+                   message => alert(message)
+                   );
+           return "message sent successfully";                }
+
+           </script>
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="container">
