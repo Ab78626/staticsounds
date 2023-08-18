@@ -20,6 +20,8 @@
 
 </head>
 <script src="https://smtpjs.com/v3/smtp.js"> </script>
+    <script SRC="js/emali.js"></script>
+    >
 <body>
     <!-- Preloader -->
     <div class="preloader d-flex align-items-center justify-content-center">
@@ -192,23 +194,9 @@
             </div>
         </div>
     </section>
-    <script>
-        function sendMail(e) {
-           e.preventDefault();
-           Email.send({
-                       Host : "smtp.elasticemail.com",
-                       Username : "staticsoundsja@gmail.com",
-                       Password : "FEE7B1DD1C52C70EB2D88220CF97249C06F0",
-                       To : 'staticsoundsja@gmail.com',
-                       From : 'staticsoundsja@gmail.com',
-                       Subject : document.getElementById('subject').value,
-                       Body : document.getElementById('message').value + " contact me at  : "+ document.getElementById('email').value +"  name "+document.getElementById('name').value
-                   }).then(
-                   message => alert(message)
-                   );
-           return "message sent successfully";                }
-
-           </script>
+    
+   
+       
     <!-- ##### Contact Area End ##### -->
 
         <!-- ##### Footer Area Start ##### -->

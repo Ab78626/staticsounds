@@ -10,7 +10,7 @@
 
     <!-- Title -->
     <title>Static Movement</title>
-
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
     <!-- Favicon -->        
     <link rel="icon" href="img/core-img/sra.png">
 
@@ -303,7 +303,7 @@
                     </div>
                 </div>
             </div>
-
+         <form> 
             <div class="row">
                 <div class="col-12">
                     <!-- Contact Form Area -->
@@ -312,22 +312,22 @@
                             <div class="row">
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group wow fadeInUp" data-wow-delay="100ms">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                        <input type="text" class="form-control" id="name" placeholder="Name" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group wow fadeInUp" data-wow-delay="200ms">
-                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group wow fadeInUp" data-wow-delay="300ms">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group wow fadeInUp" data-wow-delay="400ms">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
@@ -340,23 +340,7 @@
             </div>
         </div>
     </section>
-    <script>
-        function sendMail(e) {
-           e.preventDefault();
-           Email.send({
-                       Host : "smtp.elasticemail.com",
-                       Username : "staticsoundsja@gmail.com",
-                       Password : "FEE7B1DD1C52C70EB2D88220CF97249C06F0",
-                       To : 'staticsoundsja@gmail.com',
-                       From : 'staticsoundsja@gmail.com',
-                       Subject : document.getElementById('subject').value,
-                       Body : document.getElementById('message').value + " contact me at  : "+ document.getElementById('email').value +"  name "+document.getElementById('name').value
-                   }).then(
-                   message => alert(message)
-                   );
-           return "message sent successfully";                }
-
-           </script>
+   
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="container">
@@ -380,6 +364,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <script SRC="js/emali.js"></script>
 </body>
 
 
