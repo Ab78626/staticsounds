@@ -1,6 +1,6 @@
-def opai():
-    num3=23
+def main():
+    num3=90
     num=9
     print (num3+num)
 
-opai()
+main()
